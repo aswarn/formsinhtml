@@ -7,7 +7,7 @@
 
 <h1>Pets</h1>
 <p>Form 1</p>
-<form>
+<form action="/action_page.php">
 <input type="radio" name="pets" value="dog" checked>Dog</input>
 <input type="radio" name="pets" value="cat" checked>Cat</input>
 <input type="radio" name="pets" value="rabbit" checked>Rabbit</input>
@@ -15,17 +15,23 @@
 </form>
 
 <p>Form 2: Write the name of 3 of your favourite pets</p>
-<form>
+<form action="/action_page.php">
 <input type="text" name="pets" value="pet1"></input>
 <input type="text" name="pets"  value="pet2"></input>
 <input type="text" name="pets"  value="pet2"> </input>
 <input type="submit">
 </form>
-<p>Form 2: Choose your favourite pet from the list below</p>
-<select size='2'>
+<p>Form 3: Choose your favourite pet from the list below</p>
+<form action="/action_page.php">
+<select name="pet" size='2'>
 <option value="cat">Cat</input>
 <option value="dog">Dog</input>
 <option value="rabbit">Rabbit</input>
+<input type="submit">
+</form>
+<p>Form 4: List your favourite pets</p>
+<form  action="/action_page.php">
+<textarea name="pets" rows='10' cols='20'></textarea>
 <input type="submit">
 </form>
 </body>
