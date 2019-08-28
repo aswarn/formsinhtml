@@ -23,7 +23,7 @@
 </form>
 <p>Form 3: Choose your favourite pet from the list below</p>
 <form action="/action_page.php">
-<select name="pet" size='2'>
+<select name="pet" size='2' multiple>
 <option value="cat">Cat</input>
 <option value="dog">Dog</input>
 <option value="rabbit">Rabbit</input>
@@ -33,6 +33,9 @@
 <form  action="/action_page.php">
 <textarea name="pets" rows='10' cols='20'></textarea>
 <input type="submit">
+<p>Form 4: Choose your favourite pets</p>
+<input list="pets">
+<detailedlist>
 </form>
 </body>
 </html>
