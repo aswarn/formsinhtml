@@ -1,0 +1,49 @@
+//take a number and find the frequency of prime factors m
+ 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    /******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.*/
+
+
+       int  a,b,c=0,x ,i       ;
+cin>>x;
+     for(i=1;i<=x;i++)
+        {
+           if(x%i==0)
+             {
+                 a=0;
+                 
+       	       for(int j=1;j<=i;j++)
+                  {
+                      if(i%j==0)
+                        a++;
+                  }
+                  c=0;
+ 	            if(a==2)
+                {    b=x;
+             
+                  while(b%i==0)
+                {	
+                    b=b/i ;
+                    c++;
+      
+
+                }
+                cout<<"Frequency of"<<i<<"is"<<c<<"\n";
+             }
+             
+             }
+        
+
+}
+
+    return 0;
+}
